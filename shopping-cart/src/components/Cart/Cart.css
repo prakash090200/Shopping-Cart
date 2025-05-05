@@ -2,6 +2,8 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 24px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .cart h2 {
@@ -15,6 +17,10 @@
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
 }
 
 .empty-cart {
@@ -103,7 +109,12 @@
 
 @media (max-width: 768px) {
   .cart {
-    padding: 16px;
+    padding: 12px;
+  }
+
+  .cart-items {
+    padding: 12px;
+    gap: 12px;
   }
 
   .cart-item {
